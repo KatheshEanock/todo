@@ -74,9 +74,9 @@ function Todo() {
           location.reload()
  }
   return (
-    <div className="w-full h-full">
-      <div className="p-8">
-        <Card className="w-[350px]">
+    <div className="sm:flex  justify-center items-center">
+      <div className="mt-16 mr-7">
+        <Card className="w-full">
           <CardHeader>
             <CardTitle>{editMode ? "Edit Info" : "ToDo"}</CardTitle>
             <CardDescription>{editMode ? "Edit Your Info" : "Add Your Info"} </CardDescription>
@@ -125,19 +125,19 @@ function Todo() {
           </CardContent>
         </Card>
       </div>
-      {/* <div >
+      <div>
         <Table >
           <TableCaption> {(data.length===0) ?"No Data Found" : "A list of your recent Data's."}</TableCaption>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">ID</TableHead>
+              <TableHead className="w-[full]">ID</TableHead>
               <TableHead>Name</TableHead>
               <TableHead>Email</TableHead>
               <TableHead className="text-center">Number</TableHead>
               <TableHead className="text-center">Action</TableHead>
             </TableRow>
           </TableHeader>
-          <TableBody>
+          <TableBody className="">
             {data.map((data: any, index) => {
               return (
                 <>
@@ -166,7 +166,7 @@ function Todo() {
             })}
           </TableBody>
         </Table>
-      </div> */}
+      </div>
     </div>
   );
 }
