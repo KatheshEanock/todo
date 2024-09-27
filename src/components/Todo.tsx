@@ -92,7 +92,7 @@ function Todo() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Enter your Name"
+                    placeholder="Enter your Name" 
                   />
                 </div>
                 <div className="flex flex-col space-y-1.5">
